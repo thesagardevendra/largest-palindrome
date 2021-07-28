@@ -1,0 +1,20 @@
+<script>
+    function palindrome(){
+
+for(var i =999; i>100; i--){
+    for(var j = 999; j>100; j--){
+        var multi = j*i;
+        if(isNum(multi)){
+            return i * j;
+        }
+    }
+}
+}
+
+function isNum(j){
+return j.toString() == j.toString().split("").reverse().join("");
+}
+
+console.log(palindrome());
+//Output:- 580085
+</script>
